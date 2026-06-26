@@ -1,5 +1,5 @@
 // Wedding date: 27 June 2026, 12:30 local time
-const WEDDING_DATE = new Date('2026-09-06T12:30:00');
+const WEDDING_DATE = new Date('2026-09-12T11:00:00.000Z');
 
 // Current language
 let currentLanguage = 'ru';
