@@ -49,30 +49,16 @@
   <!-- Splash -->
   <div id="splash" class="splash">
     <div class="splash__inner">
-      <p class="splash__label" data-ru="Вам пришло приглашение" data-en="You are invited" data-pl="Zapraszamy" data-it="Sei invitato">Вам пришло приглашение</p>
+      <p class="splash__label">Вам пришло приглашение</p>
       <div class="splash__divider"></div>
       <p class="splash__names nowrap">Misha &amp; Kristina</p>
       <p class="splash__date">12 · 09 · 2026</p>
-      <button class="splash__enter" id="splash-enter" data-ru="Открыть приглашение" data-en="Open invitation" data-pl="Otwórz zaproszenie" data-it="Apri invito">Открыть приглашение</button>
-      <div style="margin-top: 2rem; display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
-        <button onclick="setLanguage('ru')" style="background: transparent; border: 1px solid var(--dark); padding: 0.4rem 0.8rem; cursor: pointer; font-size: 0.75rem; font-family: var(--font-sans); color: var(--dark); -webkit-appearance: none; -moz-appearance: none; appearance: none;">РУ</button>
-        <button onclick="setLanguage('en')" style="background: transparent; border: 1px solid var(--dark); padding: 0.4rem 0.8rem; cursor: pointer; font-size: 0.75rem; font-family: var(--font-sans); color: var(--dark); -webkit-appearance: none; -moz-appearance: none; appearance: none;">EN</button>
-        <button onclick="setLanguage('pl')" style="background: transparent; border: 1px solid var(--dark); padding: 0.4rem 0.8rem; cursor: pointer; font-size: 0.75rem; font-family: var(--font-sans); color: var(--dark); -webkit-appearance: none; -moz-appearance: none; appearance: none;">PL</button>
-        <button onclick="setLanguage('it')" style="background: transparent; border: 1px solid var(--dark); padding: 0.4rem 0.8rem; cursor: pointer; font-size: 0.75rem; font-family: var(--font-sans); color: var(--dark); -webkit-appearance: none; -moz-appearance: none; appearance: none;">IT</button>
-      </div>
+      <button class="splash__enter" id="splash-enter">Открыть приглашение</button>
     </div>
   </div>
 
   <!-- Music toggle (visible after splash) -->
   <button class="music-btn" id="music-btn" onclick="toggleMusic()" title="Музыка">♪</button>
-
-  <!-- Language selector (visible after splash) -->
-  <div class="lang-selector" id="lang-selector">
-    <button onclick="setLanguage('ru')" class="lang-btn" title="Русский">РУ</button>
-    <button onclick="setLanguage('en')" class="lang-btn" title="English">EN</button>
-    <button onclick="setLanguage('pl')" class="lang-btn" title="Polski">PL</button>
-    <button onclick="setLanguage('it')" class="lang-btn" title="Italiano">IT</button>
-  </div>
 
   <!-- ── Hero ───────────────────────────────────────────── -->
   <section class="hero">
@@ -97,15 +83,15 @@
   <section class="section section--olive reveal">
     <div class="section__inner">
       <div class="calendar">
-        <div class="calendar__header" data-ru="Июнь 2026" data-en="June 2026" data-pl="Czerwiec 2026" data-it="Giugno 2026">Сентябрь 2026</div>
+        <div class="calendar__header">Сентябрь 2026</div>
         <div class="calendar__grid">
-          <div class="calendar__dow" data-ru="Пн" data-en="Mon" data-pl="Pon" data-it="Lun">Пн</div>
-          <div class="calendar__dow" data-ru="Вт" data-en="Tue" data-pl="Wt" data-it="Mar">Вт</div>
-          <div class="calendar__dow" data-ru="Ср" data-en="Wed" data-pl="Śr" data-it="Mer">Ср</div>
-          <div class="calendar__dow" data-ru="Чт" data-en="Thu" data-pl="Czw" data-it="Gio">Чт</div>
-          <div class="calendar__dow" data-ru="Пт" data-en="Fri" data-pl="Pią" data-it="Ven">Пт</div>
-          <div class="calendar__dow" data-ru="Сб" data-en="Sat" data-pl="Sob" data-it="Sab">Сб</div>
-          <div class="calendar__dow" data-ru="Вс" data-en="Sun" data-pl="Ndz" data-it="Dom">Вс</div>
+          <div class="calendar__dow">Пн</div>
+          <div class="calendar__dow">Вт</div>
+          <div class="calendar__dow">Ср</div>
+          <div class="calendar__dow">Чт</div>
+          <div class="calendar__dow">Пт</div>
+          <div class="calendar__dow">Сб</div>
+          <div class="calendar__dow">Вс</div>
           <!-- week 1: Jun 1 = Monday -->
           <div class="calendar__day">1</div>
           <div class="calendar__day">2</div>
@@ -144,26 +130,26 @@
         </div>
       </div>
 
-      <h2 class="section-title" data-ru="До свадьбы осталось" data-en="Time until wedding" data-pl="Czas do ślubu" data-it="Tempo fino al matrimonio">До свадьбы осталось</h2>
+      <h2 class="section-title">До свадьбы осталось</h2>
       <div class="countdown" id="countdown">
         <div class="countdown__block">
           <span class="countdown__num" id="cd-days">--</span>
-          <span class="countdown__label" data-ru="Дней" data-en="Days" data-pl="Dni" data-it="Giorni">Дней</span>
+          <span class="countdown__label">Дней</span>
         </div>
         <div class="countdown__sep">:</div>
         <div class="countdown__block">
           <span class="countdown__num" id="cd-hours">--</span>
-          <span class="countdown__label" data-ru="Часов" data-en="Hours" data-pl="Godzin" data-it="Ore">Часов</span>
+          <span class="countdown__label">Часов</span>
         </div>
         <div class="countdown__sep">:</div>
         <div class="countdown__block">
           <span class="countdown__num" id="cd-minutes">--</span>
-          <span class="countdown__label" data-ru="Минут" data-en="Minutes" data-pl="Minut" data-it="Minuti">Минут</span>
+          <span class="countdown__label">Минут</span>
         </div>
         <div class="countdown__sep">:</div>
         <div class="countdown__block">
           <span class="countdown__num" id="cd-seconds">--</span>
-          <span class="countdown__label" data-ru="Секунд" data-en="Seconds" data-pl="Sekund" data-it="Secondi">Секунд</span>
+          <span class="countdown__label">Секунд</span>
         </div>
       </div>
     </div>
@@ -172,12 +158,12 @@
   <!-- ── Venue ─────────────────────────────────────────── -->
   <section class="section section--beige reveal">
     <div class="section__inner">
-      <h2 class="section-title" data-ru="Место проведения" data-en="Venue" data-pl="Miejsce" data-it="Luogo">Место проведения</h2>
+      <h2 class="section-title">Место проведения</h2>
 
       <div class="venue-photo-wrap">
         <img
           src="venue.jpg"
-          alt="Victory Hall"
+          alt="Золотой жёлудь"
           class="venue-photo"
           onerror="this.style.display='none';"
         />
@@ -188,7 +174,7 @@
       <button class="map-toggle-btn" id="map-toggle-btn" onclick="toggleMap()" data-ru="Открыть карту" data-en="Open map" data-pl="Otwórz mapę" data-it="Apri mappa">Открыть карту</button>
       <div class="map-container" id="map-container">
         <iframe
-          title="Wedding Reception"
+          title="Золотой жёлудь"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a6ddb269319179e5d1e387d0fd713e8c093cf03bf4281e8a732234de12aaa9c&amp;source=constructor"
           allowfullscreen=""
           loading="lazy"
