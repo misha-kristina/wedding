@@ -1,0 +1,40 @@
+/* Calendar header - увеличить размер */
+.calendar__header {
+  font-size: 1.9rem;
+}
+
+/* Calendar дни недели - увеличить */
+.calendar__dow {
+  font-size: 0.85rem;
+}
+
+/* Calendar дни - увеличить */
+.calendar__day {
+  font-size: 1.3rem;
+}
+
+/* Countdown - уменьшить отступ после */
+.countdown {
+  margin-bottom: 1.5rem;
+}
+
+/* Timeline время - не курсив */
+.tl-time {
+  font-style: normal;
+}
+
+/* Timeline события - крупнее */
+.tl-event {
+  font-size: clamp(2.2rem, 6vw, 3rem);
+}
+
+/* Survey вопросы - не курсив */
+.survey-label {
+  font-style: normal;
+}
+
+/* Survey подсказки - курсив и менее заметные */
+.survey-input::placeholder { 
+  font-style: italic;
+  opacity: 0.6;
+}
